@@ -1,0 +1,11 @@
+package edu.mms.javabasico.heranca.main;
+
+public class TesteHeranca {
+
+	public static void main(String[] args) {
+		
+			
+
+	}
+
+}

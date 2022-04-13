@@ -1,0 +1,61 @@
+package edu.mms.javabasico.heranca;
+
+/**
+* A classe Professor é usada como um exemplo de herança com classe Pessoa.
+* 
+*  
+* @author  Marilainny Martins da Silva
+* @version 1.0
+* @since   2020.04.11 
+*/
+
+public class Professor extends Pessoa{
+	/*
+	 * Manter os atributos privados;
+	 * Acessar os atributos por gets e sets;
+	 */
+	
+	private String departamento;
+	
+	private String nomeCurso;
+	
+	private double salario;
+
+	public Professor() {
+		super();
+		// Construtor da super classe.
+	}
+	
+	
+	/*
+	 * Encapsulamento: métodos getters e setters.
+	 */
+	public String getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+
+	public String getNomeCurso() {
+		return nomeCurso;
+	}
+
+	public void setNomeCurso(String nomeCurso) {
+		this.nomeCurso = nomeCurso;
+	}
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+	
+	
+	
+	
+
+}

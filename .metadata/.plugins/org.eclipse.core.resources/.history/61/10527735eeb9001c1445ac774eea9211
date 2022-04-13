@@ -1,0 +1,33 @@
+package edu.mms.javabasico.heranca.main;
+
+// importação das classes
+import edu.mms.javabasico.heranca.Aluno;
+import edu.mms.javabasico.heranca.Pessoa;
+import edu.mms.javabasico.heranca.Professor;
+
+/**
+* A classe TesteHeranca é usada para testar os códigos.
+*   
+* @author  Marilainny Martins da Silva
+* @version 1.0
+* @since   2020.04.11 
+*/
+
+public class TesteHeranca {
+
+	public static void main(String[] args) {
+			
+	//Instancias das classes Pessoa, Aluno e Professor;
+	 
+			Pessoa pessoa = new Pessoa();
+			
+			Aluno aluno = new Aluno();
+			
+			Professor professor = new Professor();
+			
+			
+			
+
+	}
+
+}

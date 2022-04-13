@@ -1,0 +1,14 @@
+package edu.mms.javabasico.heranca;
+
+/**
+* A classe Pessoa é onde declaramos os atributos, 
+*     que pertence tanto a classe Aluno quanto a classe Professor.
+* *  
+* @author  Marilainny Martins da Silva
+* @version 1.0
+* @since   2020.04.11 
+*/
+
+public class Pessoa {
+
+}

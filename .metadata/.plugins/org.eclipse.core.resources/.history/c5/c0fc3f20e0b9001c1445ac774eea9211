@@ -1,0 +1,16 @@
+package edu.mms.javabasico.heranca;
+
+/**
+* A classe Aluno é usada como um exemplo de herança com classe Pessoa.
+* 
+*  
+* @author  Marilainny Martins da Silva
+* @version 1.0
+* @since   2020.04.11 
+*/
+
+public class Aluno extends Pessoa{
+	
+	
+
+}

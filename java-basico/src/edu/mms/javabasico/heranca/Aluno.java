@@ -40,11 +40,15 @@ public class Aluno extends Pessoa{
 	public void setNotas(double[][] notas) {
 		this.notas = notas;
 	}
-	
+	@Override
 	public String obterEtiquetaEndereco() {
 		String etiqueta = "Endereço do Aluno: ";
 		etiqueta+= super.getEndereco();
 		return etiqueta;
+	}
+	@Override
+	public void imprimirEtiquetaEndereço() {
+		System.out.println(this.obterEtiquetaEndereco()+" Nome do Professor: "+super.getNome());
 	}
 
 	@Override

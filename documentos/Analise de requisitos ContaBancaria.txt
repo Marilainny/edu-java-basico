@@ -1,0 +1,33 @@
+Analise de Requisitos
+
+Criar uma classe conta Bancária com os seguintes atributos:
+- nome do cliente
+- numero da conta
+- saldo
+
+E os seguintes métodos
+
+- sacar (o saldo não pode ficar negativo)
+- depositar
+
+Crie duas subclasses chamadas ContaPoupanca e ContaEspecial, com as seguintes caracteristicas:
+
+ContaPoupanca
+
+- atributo diaRendimento
+- métodos calcularNovoSaldo, recebe taxa de rendimento da poupança e atualiza o saldo
+
+ContaEspecial
+
+- atributo limite  
+- sobrescreva o método sacar com a nova lógica necessária.
+
+Crie uma classe de Teste que contenha a seguinte lógica:
+
+- Criar contas
+- Sacar um valor das contas
+- Depositar
+- Mostrar um novo saldo a partir de um rendimento
+- Mostrar os dados da conta do cliente
+
+

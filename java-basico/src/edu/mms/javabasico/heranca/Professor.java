@@ -5,7 +5,7 @@ package edu.mms.javabasico.heranca;
  *   
  * @author  Marilainny Martins da Silva
  * @version 1.0
- * @since   2020.04.11 
+ * @since   11.04.2022
  */
 
 public class Professor extends Pessoa{
@@ -73,7 +73,6 @@ public class Professor extends Pessoa{
 		etiqueta+= super.getEndereco();
 		return etiqueta;
 	}
-
 
 	/*
 	 * O método toString retorna uma representação string de um objeto.

@@ -1,14 +1,13 @@
 package edu.mms.javabasico.heranca;
 
 /**
-* A classe Pessoa é a classe Pai que contém os atributos em comum, 
-*      tanto a classe Aluno quanto a classe Professor.
-*   
+* A classe Pessoa especifica funcionalidades para outras classes.
+* 		uma classe abstrata não pode ser instanciada, apenas estendida.
+* 
 * @author  	 Marilainny Martins da Silva
 * @version 	 1.1
 * @since     14.04.2022
-* @implNote  Release 15.04.2022 
-* 			 uma classe abstrata não pode ser instanciada, apenas estendida.
+* @implNote  Release 15.04.2022  			 
 */
 
 
@@ -29,7 +28,7 @@ public abstract class Pessoa {
 	public Pessoa() {
 		
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
@@ -61,6 +60,7 @@ public abstract class Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
 	/*
 	 * Método que se extends para as classes filhas.
 	 */

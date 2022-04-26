@@ -1,5 +1,6 @@
 package edu.mms.javabasico.heranca.main;
 
+import edu.mms.javabasico.classe.polimorfismo.ContaBancaria;
 import edu.mms.javabasico.heranca.Aluno;
 import edu.mms.javabasico.heranca.Professor;
 
@@ -27,8 +28,8 @@ public class TesteHeranca {
 		System.out.println(aluno.obterEtiquetaEndereco());
 		
 		professor.setNome("José Carlos");
-		professor.setEndereco("Rua Aluno");
-		professor.setTelefone("555-55555");
+		professor.setEndereco("Rua Professor");
+		professor.setTelefone("9999-55555");
 		
 		System.out.println(professor.obterEtiquetaEndereco());
 		
@@ -42,7 +43,18 @@ public class TesteHeranca {
 		
 		aluno.imprimirEtiquetaEndereço();
 		professor.imprimirEtiquetaEndereço();
-
+		
+		//método toString
+		String[] cursos = {"Português", "Matematica", "Geografia", "História"};
+		double[] notas = {7.0, 7.0, 7.0, 7.0};
+		
+		aluno.setCursos(cursos);
+		aluno.setNotas(notas);
+		
+		System.out.println(aluno);
+		
+		System.out.println(aluno.equals(cursos));
+								
 	}
 
 }

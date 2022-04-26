@@ -1,4 +1,4 @@
-package edu.mms.javabasico.classe.abstrata;
+package edu.mms.javabasico.classeabstrata;
 
 public class Papagaio extends Ave{
 	

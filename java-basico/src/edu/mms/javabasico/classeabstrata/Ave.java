@@ -1,4 +1,4 @@
-package edu.mms.javabasico.classe.abstrata;
+package edu.mms.javabasico.classeabstrata;
 /**
 * A classe Ave especifica funcionalidades para um grupo de classes; que herdam certas funcionalidades.
 *   	uma classe abstrata não pode ser instanciada, apenas estendida.

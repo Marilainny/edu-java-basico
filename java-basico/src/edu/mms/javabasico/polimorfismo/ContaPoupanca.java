@@ -1,4 +1,4 @@
-package edu.mms.javabasico.classe.polimorfismo;
+package edu.mms.javabasico.polimorfismo;
 /**
  * A ContaPoupanca extends da ContaPoupanca e sobrescreve o toString,
  * atualiza o saldo da ContaBancaria através de taxa de rendimento.

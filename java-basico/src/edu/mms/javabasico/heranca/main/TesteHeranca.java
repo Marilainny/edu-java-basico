@@ -1,8 +1,8 @@
 package edu.mms.javabasico.heranca.main;
 
-import edu.mms.javabasico.classe.polimorfismo.ContaBancaria;
 import edu.mms.javabasico.heranca.Aluno;
 import edu.mms.javabasico.heranca.Professor;
+import edu.mms.javabasico.polimorfismo.ContaBancaria;
 
 /**
  * A classe TesteHeranca é usada para testar os códigos.

@@ -1,4 +1,4 @@
-package edu.mms.javabasico.classe.polimorfismo;
+package edu.mms.javabasico.polimorfismo;
 /**
  * A ContaBancaria onde encontra-se os métodos principais para uma conta,
  * outras classes extends esta classe.

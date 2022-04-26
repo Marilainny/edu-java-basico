@@ -1,8 +1,8 @@
 package edu.mms.javabasico.polimorfismo.main;
 
-import edu.mms.javabasico.classe.polimorfismo.ContaBancaria;
-import edu.mms.javabasico.classe.polimorfismo.ContaEspecial;
-import edu.mms.javabasico.classe.polimorfismo.ContaPoupanca;
+import edu.mms.javabasico.polimorfismo.ContaBancaria;
+import edu.mms.javabasico.polimorfismo.ContaEspecial;
+import edu.mms.javabasico.polimorfismo.ContaPoupanca;
 
 public class Polimorfismo {
 

@@ -1,7 +1,7 @@
 package edu.mms.javabasico.classeabstrata;
 /**
-* A classe Cavalo extende um grupo de classes abstrata; herdando certas funcionalidades.
-*   implementa interface e seus métodos.
+* A classe Cavalo extende um grupo de classes abstratas; herdando certas funcionalidades.
+*   implementa interface e suas assinaturas.
 *   
 *   
 * @author  	 Marilainny Martins da Silva

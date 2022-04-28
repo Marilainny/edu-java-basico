@@ -1,7 +1,7 @@
 package edu.mms.javabasico.classeabstrata;
 
 /**
-* A classe Animal especifica funcionalidades para outras classes.
+* A classe Animal especifica funcionalidades para as classes que a extender.
 * 		uma classe abstrata não pode ser instanciada, apenas estendida.
 *   
 * @author  	 Marilainny Martins da Silva

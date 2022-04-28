@@ -1,6 +1,6 @@
 package edu.mms.javabasico.classeabstrata;
 /**
-* A classe SomDoAnimal é uma classe do tipo final Uma classe final que não pode ser estendida. 
+* A classe SomDoAnimal é do tipo final, que não pode ser estendida. 
 * Os métodos também são declarados como finais para indicar que não podem ser substituídos pelas subclasses.
 * 
 * @author  	 Marilainny Martins da Silva

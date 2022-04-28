@@ -1,7 +1,7 @@
 package edu.mms.javabasico.classeabstrata;
 /**
 * A classe Gato extende um grupo de classes abstrata; herdando certas funcionalidades.
-*   implementa interfaces implementando seu métodos.*   
+*   implementa interfaces implementando seus métodos.*   
 *   
 * @author  	 Marilainny Martins da Silva
 * @version 	 1.0

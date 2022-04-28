@@ -1,6 +1,7 @@
 package edu.mms.javabasico.classeabstrata;
 /**
-* Interface com métodos para ser implementados em outras classes.
+* Interface com assinaturas para serem implementados em outras classes.
+*  as interfaces não tem corpo apenas assinatura.
 *      
 * @author  	 Marilainny Martins da Silva
 * @version 	 1.0

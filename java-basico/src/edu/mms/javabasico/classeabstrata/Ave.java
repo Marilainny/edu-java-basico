@@ -1,7 +1,8 @@
 package edu.mms.javabasico.classeabstrata;
 /**
-* A classe Ave especifica funcionalidades para um grupo de classes; que herdam certas funcionalidades.
+* A classe Ave especifica métodos para um grupo de subclasses; que herdam suas funcionalidades.
 *   	uma classe abstrata não pode ser instanciada, apenas estendida.
+*   
 * @author  	 Marilainny Martins da Silva
 * @version 	 1.0
 * @since     14.04.2022

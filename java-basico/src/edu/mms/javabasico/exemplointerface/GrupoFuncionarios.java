@@ -11,18 +11,30 @@ package edu.mms.javabasico.exemplointerface;
 public class GrupoFuncionarios implements Funcionario{
 	
 	public class Gerente implements Funcionario{
+		
+		@SuppressWarnings("unused")
 		private int id;
+		
+		@SuppressWarnings("unused")
 		private String nome;
 		
 	}
 	
 	public class Coodernador implements Funcionario{
+		
+		@SuppressWarnings("unused")
 		private int id;
+		
+		@SuppressWarnings("unused")
 		private String nome;
 	}
 	
 	public class Operador implements Funcionario{
+		
+		@SuppressWarnings("unused")
 		private int id;
+		
+		@SuppressWarnings("unused")
 		private String nome;
 	}
 	

@@ -1,7 +1,5 @@
 package edu.mms.javabasico.exemplointerface;
 
-import java.util.List;
-
 /**
 * Interface com assinaturas para serem implementados em outras classes.
 *  as interfaces não tem corpo apenas assinatura.

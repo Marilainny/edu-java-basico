@@ -7,8 +7,7 @@ package edu.mms.javabasico.exemplointerface;
 * @author  	 Marilainny Martins da Silva
 * @version 	 1.0
 * @since     28.04.2022
-* @implNote  modelo exemplo.
-* 			 
+* @implNote  modelo exemplo.* 			 
 */
 public interface BasicoDAO {
 

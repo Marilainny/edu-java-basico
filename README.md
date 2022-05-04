@@ -1,15 +1,17 @@
+<!-- Configuração do git README.md no site: https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax-->
+
 # edu-java-basico
 Repositório de código basico de java, de acesso público.
-<<<<<<< HEAD
+<p>
 Código educativo sobre:
 - Herança
 - Polimorfismo
 - Classe Abstrata
+</p>
+<h2>Na pasta documentos haverá disponível, fluxogramas e arquivos de texto, para análise geral.</h2>
 
-Na pasta documentos haverá disponivel, fluxogramas e arquivos de texto, para analise geral.
-=======
-
-git remote add origin https://github.com/Marilainny/edu-java-basico.git
-git branch -M main
-git push -u origin main
->>>>>>> 93024c105e058d515d83d597c23b62658e5a4257
+<code>git remote add origin https://github.com/Marilainny/edu-java-basico.git</code>
+</br>
+<code>git branch -M main</code>
+</br>
+<code>git push -u origin main</code>

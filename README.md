@@ -143,10 +143,11 @@ Repositório de código basico de java, de acesso público.
 </code></pre>
 
 <h2>Converter Inteiro em String</h2>
-<pre><code>
-    int n = 42;
+<pre><code>int n = 42;
     String str = Integer.toString(n);
 
     String str = "101010";   
-    int n = Integer.parseInt(str);
-</code></pre>
+    int n = Integer.parseInt(str);</code></pre>
+
+
+

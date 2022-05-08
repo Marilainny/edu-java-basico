@@ -8,11 +8,8 @@ Repositório de código basico de java, de acesso público.
 <p>Assinatura final, nome da constante usar letras Uppercase, pode declarar a contante como static</p>
 <pre><code>final int DAYS_PER_WEEK = 7;</code></pre>
 <pre><code>puclic class calendar{
-
     public static final int DAYS_PER_WEEK = 7;
-
-    }
-</code></pre>
+    }</code></pre>
 
 <h2>Enum</h2>
 <p>Enum são objetos</p>
@@ -153,6 +150,3 @@ Repositório de código basico de java, de acesso público.
     String str = "101010";   
     int n = Integer.parseInt(str);
 </code></pre>
-
-
-

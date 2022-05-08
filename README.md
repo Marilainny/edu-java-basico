@@ -5,7 +5,7 @@ Repositório de código basico de java, de acesso público.
 <h1>Anotações Gerais</h1>
 
 <h2>Constantes</h2>
-<p>assinatura final, nome da constante usar letras Uppercase, pode declarar a contante como static</p>
+<p>Assinatura final, nome da constante usar letras Uppercase, pode declarar a contante como static</p>
 <pre><code>final int DAYS_PER_WEEK = 7;</code></pre>
 <pre><code>puclic class calendar{
 
@@ -63,7 +63,6 @@ Repositório de código basico de java, de acesso público.
     --output: 42 years.
     </code>
 </pre>
-
 <pre>
     <code>
     "Next year, you will be " + age + 1 //Error
@@ -91,33 +90,33 @@ Repositório de código basico de java, de acesso público.
 
 <p>Para selecionar uma parte da string utilize o Substring</p>
 <pre>
-    <code>
-        String greeting = "Hello, World!";
-        String location = greeting.substring(7,12);
-        // Sets location to "World"
-    </code>
+<code>
+    String greeting = "Hello, World!";
+    String location = greeting.substring(7,12);
+    // Sets location to "World"
+</code>
 </pre>
 
 <p>Use o método slipt para retornar um array de substrings</p>
 <pre>
-    <code>
-        String names = "Peter, Paul, Mary";
-        String[] result = names.slipt(", ");
-        // An array of three strings ["Peter", "Paul", "Mary"];
-    </code>
+<code>
+    String names = "Peter, Paul, Mary";
+    String[] result = names.slipt(", ");
+    // An array of three strings ["Peter", "Paul", "Mary"];
+</code>
 </pre>
 <pre>
-    <code>
+<code>
     input.split("\s+")
     //splits coloca um espaço em branco.
-    </code>
+</code>
 </pre>
 <pre>
-    <code>
-        String fraseComEspaco = "  Java java  ";
-        fraseComEspaco.trim().length());
-        //"Java java"
-    </code>
+<code>
+    String fraseComEspaco = "  Java java  ";
+    fraseComEspaco.trim().length());
+    //"Java java"
+</code>
 </pre>
 <p>O método trim() remove o espaço em branco no ínicio e no final de uma string. Após feito isso, é chamado o método
     split() que retorna um array de String separando as palavras por espaço ou qualquer outro delimitador que vc
@@ -126,18 +125,34 @@ Repositório de código basico de java, de acesso público.
 <h2>Comparação de string</h2>
 <p>Não use operador == para comparar strings.</p>
 <pre>
-    <code>
+<code>
     String location = greeting.substring(7, 12);
     location == "World" //locatin e World são o mesmo objeto na memoria
-    </code>
+</code>
 </pre>
 <p> Nulo não é o mesmo que Vazio</p>
 <pre>
-    <code>
+<code>
     String middleName = null;
     if (middleName == null) ...
     "" //vazio
-    </code>
+</code>
 </pre>
 <p>Um método nulo causa "null pointer exception". E finaliza o programa.</p>
+<pre><code>
+    if ("World".equals(localition))
+    "world".equalsIgnoreCase(location);
+    first.compareTo(second)
+</code></pre>
+
+<h2>Converter Inteiro em String</h2>
+<pre><code>
+    int n = 42;
+    String str = Integer.toString(n);
+
+    String str = "101010";   
+    int n = Integer.parseInt(str);
+</code></pre>
+
+
 

@@ -145,9 +145,306 @@ Repositório de código basico de java, de acesso público.
 <h2>Converter Inteiro em String</h2>
 <pre><code>int n = 42;
     String str = Integer.toString(n);
-
     String str = "101010";   
-    int n = Integer.parseInt(str);</code></pre>
+    int n = Integer.parseInt(str);
+</code></pre>
+
+<h2>Scanner</h2>
+<pre><code>Scanner in = new Scanner (System.in);
+    System.out.println("What is your name?");
+    String name = in.nextLine();
+    System.out.println("How old are you?");
+    int age = in.nextInt();
+</code></pre>
+<p>Para checar se tem outras linhas use.</p>
+<pre><code>
+    if(in.hasNextInt()){
+        int age = in.nextInt();
+    }
+</code></pre>
+<p>Para password use o console</p>
+<pre><code>
+    Console Terminal = System.console();
+    String username = terminal.readLine("User name: ");
+    char[] password = terminal.readPassword("Password: "");
+</code></pre>
+
+<h2>Formatar Output</h2>
+<pre><code>System.out.printf("%8.2f, 1000.0/3");
+    System.out.printf("Hello, %s. Next year, you'll be %d.\n", name, age);</code></pre>
+
+<h2>Branches if e eslse</h2>
+<pre><code>if (count > 0) {
+    double average = sum / count;
+    System.out.println(average);
+    }</code></pre>
+
+<pre><code>if (count > 0) {
+    double average = sum / count;
+    System.out.println(average);
+    } else {
+    System.out.println(0);
+    }</code></pre>
+
+<pre><code>if (count > 0) {
+    double average = sum / count;
+    System.out.println(average);
+    } else if (count == 0) {
+    System.out.println(0);
+    } else {
+    System.out.println("Huh?");}</code></pre>
+
+<h2>Switch</h2>
+<pre><code>switch (count) {
+    case 0:
+    output = "None";
+    break;
+    case 1:
+    output = "One";
+    break;
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    output = Integer.toString(count);
+    break;
+    default:
+    output = "Many";
+    break;
+    }</code></pre>
+
+    <h2>Loops</h2>
+<p>O loop While mantém executando até ser determinado uma condição.</p>
+<pre><code>Random generator = new Random();
+    int next = generator.nextInt(10);
+
+    while (sum < target) {
+        int next = generator.nextInt(10);
+        sum += next;
+        count++;
+    }
+</code></pre>
+
+<h2>do/while loop</h2>
+<pre><code>int next;
+    do {
+    next = generator.nextInt(10);
+    count++;
+    } while (next != target);
+</code></pre>
+
+<h2>for loop</h2>
+<pre><code>for (int i = 1; i <= 20; i++) {
+    int next = generator.nextInt(10);
+    sum += next;
+    }
+</code></pre>
+<p>Podemos reescrever o código equivalente</p>
+<pre><code>int i = 1;
+    while (i <= 20) {
+    int next = generator.nextInt(10);
+    sum += next;
+    i++;
+    }
+</code></pre>
+
+<h2>Inicialização da variavél</h2>
+<pre><code>for (int i = 1; i < target; i *= 2) {
+    System.out.println(i);
+</code></pre>
+
+<h2> Breaking and Continuing</h2>
+<pre><code>boolean done = false;
+    while (!done) {
+    String input = in.next();
+    if ("Q".equals(input)) {
+    done = true;
+    } else {
+    Process input
+    }
+}</code></pre>
+<p>examplo:</p>
+<pre><code>while (true) {
+    String input = in.next();
+    if (input.equals("Q")) break; // Exits loop
+    Process input
+    }// break jumps here</code></pre>
+
+<h2>Continue</h2>
+<pre><code>while (in.hasNextInt()) {
+    int input = in.nextInt();
+    if (input < 0) continue; // Jumps to test of in.hasNextInt()
+    Process input
+}</code></pre>
+<p>exemplo:</p>
+<pre><code>for (int i = 1; i <= target; i++) {
+    int input = in.nextInt();
+    if (n < 0) continue; // Jumps to i++
+    Process input
+}</code></pre>
+<h2> Local Variable Scope</h2>
+<pre><code>public static void main(String[] args) { // Scope of args starts here
+    ...
+    // Scope of args ends here
+}</code></pre>
+
+<p>Exemplo onde o i é atualizado</p>
+<pre><code>for (int i = 0; i < n; i++) { // i is in scope for the test and update
+    ...
+    }// i not defined here</code></pre>
+
+<p>Exemplo onde é preciso o valor de i</p>
+<pre><code>int i;
+    for (i = 0; !found && i < n; i++) {
+    ...
+    }// i still available</code></pre>
+<p>No Java não pode ter variavél sobreposta</p>
+<pre><code>int i = 0;
+    while (...) {
+    String i = in.next(); // Error to declare another variable i
+    ...
+}</code></pre>
+<h2>Trabalhando com Arrays</h2>
+<pre><code>
+    String[] names;
+    names = new String[100];
+    String[] names = new String[100];
+</code></pre>
+<p>Se tentar acessar um elemento que não existe vai ocorrer uma exception: ArrayIndexOutOfBoundsException.</p>
+<h2>Obter um elemento do array</h2>
+<pre><code>for (int i = 0; i < names.length; i++) {
+    names[i] = "";
+}</code></pre>
+<p>Pode construit um array com BigInteger</p>
+<pre><code>BigInteger[] numbers = new BigInteger[100];
+    for (int i = 0; i < 100; i++)
+    numbers[i] = BigInteger.valueOf(i);
+</code></pre>
+<p>Informando valores diretamente no array</p>
+<pre><code>int[] primes = { 2, 3, 5, 7, 11, 13 };</code></pre>
+<p>Array de string</p>
+<pre><code>String[] authors = {
+    "James Gosling",
+    "Bill Joy",
+    "Guy Steele",
+    // Add more names here and put a comma after each name
+};</code></pre>
+<p>Um exemplo de inicialização de array</p>
+<pre><code>primes = new int[] { 17, 19, 23, 29, 31 };</code></pre>
+<h2>Array List</h2>
+<pre><code>friends = new ArrayList<>();
+    friends.add("Peter");
+    friends.add("Paul");</code></pre>
+<p>Construtor do array list</p>
+<pre><code>ArrayList<String> friends = new ArrayList<>(List.of("Peter", "Paul"));</code></pre>
+<p>Remover elementos</p>
+<pre><code>friends.remove(1);
+    friends.add(0, "Paul"); // Adds before index 0
+</code></pre>
+<p>Acessar e setar elementos</p>
+<pre><code>String first = friends.get(0);
+    friends.set(1, "Mary");
+    
+    for (int i = 0; i < friends.size(); i++) {
+        System.out.println(friends.get(i));
+    }
+</code></pre>
+<p>É ilegal a expressão com primitivos:</p>
+<pre><code> ArrayList<int> i</code></pre>
+<h2>Classe Wrapper</h2>
+<pre><code>ArrayList<Integer> numbers = new ArrayList<>();
+    numbers.add(42);
+    int first = numbers.get(0);
+</code></pre>
+<p>Wrapper usa o método equals e não == para comparação.</p>
+<pre><code>if (numbers.get(i) == numbers.get(j)) //forma incorreta
+    (numbers.get(i).equals(j);
+</code></pre>
+<h2>Loops</h2>
+<pre><code>int sum = 0;
+    for (int i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+}</code></pre>
+<p>Forma comum</p>
+<pre><code>int sum = 0;
+    for (int n : numbers) {
+    sum += n;
+}</code></pre>
+<pre><code>for (String name : friends) {
+    System.out.println(name);
+}</code></pre>
+
+<p>Copiando array</p>
+<pre><code>int[] numbers = primes;
+    numbers[5] = 42; // Agora primes[5] é 42
+</code></pre>
+
+<p>Método para copiar</p>
+<pre><code>int[] copiedPrimes = Arrays.copyOf(primes, primes.length);</code></pre>
+
+<p>No método construtor</p>
+<pre><code>ArrayList<String> people = friends;
+    people.set(0, "Mary"); // Now friends.get(0) is also "Mary"
+</code></pre>
+
+<p>Copiar um array list</p>
+<pre><code>ArrayList<String> copiedFriends = new ArrayList<>(friends);</code></pre>
+
+<p>Wrap usa o List.of</p>
+<pre><code>String[] names = ...;
+    ArrayList<String> friends = new ArrayList<>(List.of(names));
+</code></pre>
+<pre><code>String[] names = friends.toArray(new String[0]);</code></pre>
+
+<h2>classe Array Algorithms</h2>
+<pre><code>Arrays.fill(numbers, 0); // int[] array
+    Collections.fill(friends, ""); // ArrayList<String>
+</code></pre>
+<pre><code>Arrays.fill(numbers, 0); // int[] array
+    Collections.fill(friends, ""); // ArrayList<String>
+</code></pre>
+<p>Método toString</p>
+<pre><code>String elements = friends.toString();
+    // Sets elements to "[Peter, Paul, Mary]"
+    System.out.println(friends);
+    // Calls friends.toString() and prints the result 
+</code></pre>
+<p>Parâmetro para executar comandos em linha</p>
+<pre><code>public static void main(String[] args)</code></pre>
+<pre><code>public class Greeting {
+    public static void main(String[] args) {
+        for (int i = 0; i < args.length; i++) {            
+            String arg = args[i];            
+            if (arg.equals("-h")) arg = "Hello";            
+            else if (arg.equals("-g")) arg = "Goodbye";
+                System.out.println(arg);
+        }
+    }
+}
+</code></pre>
+<h2> Multidimensional Arrays</h2>
+<pre><code>int[][] square = {
+    { 16, 3, 2, 13 },
+    { 5, 10, 11, 8 },
+    { 9, 6, 7, 12 },
+    { 4, 15, 14, 1}
+};</code></pre>
+
+<p>Para acessar os elementos usa:</p>
+<pre><code>int[] temp = square[0];
+    square[0] = square[1];
+    square[1] = temp;
+</code></pre>
+
+
+
+
+
+
+
+
+
+
 
 
 

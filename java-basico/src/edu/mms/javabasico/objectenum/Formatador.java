@@ -16,7 +16,7 @@ import java.util.InputMismatchException;
 public class Formatador {
 		
 
-	public boolean isCNPJ(String CNPJ) {
+	public static boolean isCNPJ(String CNPJ) {
 
 		// considera-se erro CNPJ's formados por uma sequência de números iguais
 		if (CNPJ.equals("00000000000000") || CNPJ.equals("11111111111111") ||
@@ -105,7 +105,7 @@ public class Formatador {
 				CNPJ.substring(12, 14));
 	}	
 	
-	public boolean isCPF(String CPF) {
+	public static boolean isCPF(String CPF) {
 		// considera-se erro CPF's formados por uma sequencia de numeros iguais
 		if (CPF.equals("00000000000") ||
 				CPF.equals("11111111111") ||

@@ -58,9 +58,6 @@ public class Aluno extends Pessoa{
 		System.out.println(this.obterEtiquetaEndereco()+" Nome do Professor: "+super.getNome());
 	}
 
-	@Override
-	public String toString() {
-		return "Aluno [cursos=" + Arrays.toString(cursos) + ", notas=" + Arrays.toString(notas) + "]";
-	}
+	
 
 }

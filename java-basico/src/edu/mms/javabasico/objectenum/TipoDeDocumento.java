@@ -8,37 +8,19 @@ package edu.mms.javabasico.objectenum;
  */
 public enum TipoDeDocumento {
 
-	/*
-	 * Exemplo sem enum:
-	 * public class TiposDeDocumento {
-	 *
-	 * public static final int DOCUMENTO_RG    = 0;
-	 * public static final int DOCUMENTO_CPF   = 1;
-	 * public static final int DOCUMENTO_CNPJ  = 2;
-	 * 
-	 * }
-	 */
 
-	RG("RG - Registro Geral"),
-	CPF("CPF - Cadastro de Pessoas Físicas"),
-	CNPJ("CNPJ - Cadastro Nacional da Pessoa Jurídica");
-
-	private String descricao;
+	CPF {
+		@Override
+		public String geraCpfCnpj() {
+			return GeraCpfCnpj.cpf();
+		}
+	}, CNPJ {
+		@Override
+		public String geraCpfCnpj() {
+			return GeraCpfCnpj.cnpj();
+		}
+	};
 	
-	
-
-	private TipoDeDocumento() {
-		
-	}
-
-	TipoDeDocumento(String descricao) {
-		this.descricao = descricao;
-
-	}
-
-	public String getDescricao() {
-		return descricao;
-	}
-
+	public abstract String geraCpfCnpj();
 
 }

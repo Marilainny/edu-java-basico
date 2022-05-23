@@ -1,8 +1,17 @@
 package edu.mms.javabasico.polimorfismo.main;
-
+import edu.mms.javabasico.polimorfismo.Compra;
+/*
+ * O polimorfismo muda o comportamento de um método.
+ */
 import edu.mms.javabasico.polimorfismo.ContaBancaria;
 import edu.mms.javabasico.polimorfismo.ContaEspecial;
 import edu.mms.javabasico.polimorfismo.ContaPoupanca;
+import edu.mms.javabasico.polimorfismo.FormaDePagamentoBoleto;
+import edu.mms.javabasico.polimorfismo.FormaDePagamentoCartao;
+import edu.mms.javabasico.polimorfismo.FormaDePagamentoDinheiro;
+import edu.mms.javabasico.polimorfismo.Pac;
+import edu.mms.javabasico.polimorfismo.Sedex;
+import edu.mms.javabasico.polimorfismo.Venda;
 
 public class Polimorfismo {
 
@@ -78,6 +87,26 @@ public class Polimorfismo {
 
 		contaEspecial.sacarValor(300);
 		System.out.println(contaEspecial.verificarLimite());
+		
+		System.out.println("****************************************************************** Fim");
+		
+		//criar o objeto venda
+		Venda venda = new Venda();
+		
+		//objeto usa como paramento a classe FormaDePagmento.
+		venda.vender(new FormaDePagamentoDinheiro(), 100.00);
+		venda.vender(new FormaDePagamentoCartao(), 200.00);
+		venda.vender(new FormaDePagamentoBoleto(), 350.00);
+		
+		//Criar o objeto compra
+		Compra dvd = new Compra(new Pac());
+		Compra blueray = new Compra(new Sedex());
+		
+		//objeto usa classe compra
+		
+		dvd.Comprar("Harry Potter e a Pedra Filosofal");
+		blueray.Comprar("Harry Potter e a Pedra Filosofal");
+		
 
 	}
 

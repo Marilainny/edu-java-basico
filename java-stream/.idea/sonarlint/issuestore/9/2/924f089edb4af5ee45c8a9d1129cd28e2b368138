@@ -1,0 +1,17 @@
+
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(«×‰˜ÿÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Â“ëj
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÛÚ¦¼ÿÿÿÿÿ
+m
+java:S6204!"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(’…©ıÿÿÿÿ
+U
+java:S1612!":Replace this lambda with method reference 'Person::getId'.(’…©ıÿÿÿÿ
+M	java:S106""9Replace this use of System.out or System.err by a logger.(Ğˆİ	
+M	java:S1060"9Replace this use of System.out or System.err by a logger.(óÚêJ
+N	java:S106G"9Replace this use of System.out or System.err by a logger.(Ÿ«¨Ô
+N
+java:S1128"9Remove this unused import 'javax.swing.text.html.Option'.(¼Òì:
+T
+java:S1128
+">Remove this unused import 'java.util.zip.CheckedOutputStream'.(Êóàû

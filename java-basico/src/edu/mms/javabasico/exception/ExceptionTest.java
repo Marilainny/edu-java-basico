@@ -1,4 +1,6 @@
-package edu.mms.javabasico.excecao.main;
+package edu.mms.javabasico.exception;
+
+import java.util.Scanner;
 
 public class ExceptionTest {
 
@@ -26,6 +28,7 @@ public class ExceptionTest {
 		int[] numeros = {4,8, 16, 32, 64, 128};
 		int[] denominador = {2, 0, 4, 8, 0};
 
+		//exemplo didatico
 		for(int i=0; i < numeros.length; i++ ) {
 
 			try {
@@ -40,6 +43,34 @@ public class ExceptionTest {
 			}
 		}
 
-	}
+		//exemplo prático é amarzenado em Logs de erro.
+		for(int i=0; i < numeros.length; i++ ) {
 
+			try {
+				System.out.println(numeros[i] + " / " +denominador[i]+ " = "+(numeros[i] / denominador[i]));
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+				e.printStackTrace();				
+			}
+
+		}
+		
+		System.out.println("Entre com um número!");
+		try {
+			double numero = lerNumero();
+			System.out.println("Número digitado: "+numero);
+		} catch (Exception e) {
+			System.out.println("Entrada Inválida");
+			e.printStackTrace();
+		}
+
+	}
+	// usar o throws Exception na assinatura do método
+	public static double lerNumero() throws Exception{
+		
+		Scanner scan = new Scanner(System.in);
+		double num = scan.nextDouble();
+		return num;
+		
+	}
 }

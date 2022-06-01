@@ -15,13 +15,38 @@ public class Formulario {
 		FEMININO('F'), MASCULINO('M');
 		
 		private char valor;
+		private String nome;
+		private Genero genero;
 		
 		Genero(char valor){
+			this.setValor(valor);
+		}
+
+		public char getValor() {
+			return valor;
+		}
+
+		public void setValor(char valor) {
 			this.valor = valor;
+		}
+
+		public String getNome() {
+			return nome;
+		}
+
+		public void setNome(String nome) {
+			this.nome = nome;
+		}
+
+		public Genero getGenero() {
+			return genero;
+		}
+
+		public void setGenero(Genero genero) {
+			this.genero = genero;
 		}
 	}
 	
-	private String nome;
-	private Genero genero;
+	
 
 }

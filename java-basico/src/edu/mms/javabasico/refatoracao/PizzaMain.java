@@ -26,6 +26,15 @@ public class PizzaMain {
 		fornoPolimorfico.fabricar(napolitanaPolimorfica);
 		fornoPolimorfico.fabricar(portuguesaPolimorfica);
 		
+		//estrutura Lambda
+		FornoLambda pizzaLambda = new FornoLambda();
+		pizzaLambda.assar(() -> System.out.println("molho, presunto, queijo, tomate e oregano."));		
+		pizzaLambda.assar(() -> System.out.println("molho tradicional, frango, queijo, tomate e oregano."));
+		
+		pizzaLambda.assar(() -> {
+			System.out.println("molho tradicional, frango, queijo, tomate e oregano.");
+			System.out.println("borda extra.");			
+		});
 
 	}
 

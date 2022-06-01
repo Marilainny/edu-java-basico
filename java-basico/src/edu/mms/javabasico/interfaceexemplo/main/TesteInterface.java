@@ -2,7 +2,6 @@ package edu.mms.javabasico.interfaceexemplo.main;
 
 import edu.mms.javabasico.classeabstrata.Animal;
 import edu.mms.javabasico.classeabstrata.AnimalEstimacao;
-import edu.mms.javabasico.classeabstrata.Ave;
 import edu.mms.javabasico.classeabstrata.Cachorro;
 import edu.mms.javabasico.classeabstrata.Cavalo;
 import edu.mms.javabasico.classeabstrata.Gato;
